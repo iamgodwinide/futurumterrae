@@ -11,7 +11,7 @@ function App() {
   }
 
   const handleTwwet = () => {
-    const tweet = `// I have the entered the Golden Age //%0A%0A// Codex: ${generateRandomBinaryNumber()} //%0A%0A%0A%0AComment your Codex below the @FuturumTerrae pinned tweet`;
+    const tweet = `// I have the entered the Golden Age //%0A%0A// Codex: ${generateRandomBinaryNumber()} //%0A%0AComment your Codex below the @FuturumTerrae pinned tweet`;
     window.open(`https://twitter.com/intent/tweet?text=${tweet}&url=${"https://futurumterrae.com"}`, '_blank');
   }
 
