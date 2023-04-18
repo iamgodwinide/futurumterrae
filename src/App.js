@@ -3,9 +3,10 @@ import { useRef } from 'react';
 
 function App() {
   const audio = useRef();
+  const bgAudio = useRef();
   const preloadWrap = useRef();
-  const gifImg = useRef();
   const startButton = useRef();
+  const overlay = useRef();
 
   function generateRandomBinaryNumber() {
     let binaryNumber = '';
@@ -22,29 +23,38 @@ function App() {
 
   const handlePlay = () => {
     startButton.current.style.display = "none";
-    gifImg.current.style.visibility = "visible";
     audio.current.play();
+    overlay.current.style.display = "none";
   }
 
   const handleEnd = () => {
     preloadWrap.current.style.display = "none";
+    bgAudio.current.play();
   }
 
   return (
     <div className='main'>
       <div className="preloader" ref={preloadWrap}>
         <button
-        ref={startButton}
-        onClick={handlePlay}
-        >Click To Start</button>
-        <img ref={gifImg} src='/2.gif'/>
+          ref={startButton}
+          onClick={handlePlay}
+          >Click To Start
+        </button>
         <audio 
-        src='/ElevenLabs_2023-04-18T05_35_32.000Z_Josh_bCLiPIexUeHOI6FuOxom.mp3' 
-        ref={audio}
-        onEnded={handleEnd}
-        preload='auto'/>
+          src='/ElevenLabs_2023-04-18T05_35_32.000Z_Josh_bCLiPIexUeHOI6FuOxom.mp3' 
+          ref={audio}
+          onEnded={handleEnd}
+          preload='auto'
+        />
+        <audio 
+          src='/Theme.mp3' 
+          ref={bgAudio}
+          loop
+          preload='auto'
+        />
+        <div className='overlay' ref={overlay}/>
+        
       </div>
-      <img src='/1.gif'/>
       <button onClick={handleTwwet}>
         Enter the Golden Age
       </button>
