@@ -33,7 +33,19 @@ function App() {
   }
 
   return (
+    <>
     <div className='main'>
+      <nav>
+        <ul>
+          <li><a href="https://twitter.com/FuturumTerrae"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+          <li><a href="#">
+            <img src='dextools.png'/>
+            </a></li>
+        </ul>
+      </nav>
+
+
       <div className="preloader" ref={preloadWrap}>
         <button
           ref={startButton}
@@ -55,10 +67,14 @@ function App() {
         <div className='overlay' ref={overlay}/>
         
       </div>
-      <button onClick={handleTwwet}>
-        Enter the Golden Age
-      </button>
+
     </div>
+    <iframe
+      src="https://app.uniswap.org/#/swap?outputCurrency=0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359"
+      height="660px"
+      width="100%"
+    />
+    </>
   )
 }
 
