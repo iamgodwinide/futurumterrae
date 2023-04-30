@@ -102,14 +102,6 @@ a{
   }
 }
 
-/* img{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-} */
-
 .main button{
   position: relative;
   z-index: 10;
@@ -131,7 +123,7 @@ a{
 }
 
 iframe{
-  margin: 10em auto;
+  margin: 0em auto;
   border: none;
 }
 

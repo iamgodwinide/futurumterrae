@@ -26,10 +26,9 @@ function AccordionComponent() {
           </AccordionBody>
         </AccordionItem>
         <AccordionItem>
-          <AccordionHeader targetId="2">HOW TO BUY $FUTURUM</AccordionHeader>
+          <AccordionHeader targetId="2">WHAT'S THE UTILITY FOR $FUTURUM?</AccordionHeader>
           <AccordionBody accordionId="2">
-          The $FUTURUM token will be fairlaunched on the Ethereum network and will be purchasable on Uniswap. The contract address is not out yet, but will be published on our Telegram and Twitter.
-          </AccordionBody>
+          $FUTURUM will be launching a fully animated NFT collection that has been in the works for months.          </AccordionBody>
         </AccordionItem>
       </Accordion>
     </div>
