@@ -44,6 +44,9 @@ function App() {
           <li><a href="#">
             <img src='dextools.png'/>
             </a></li>
+          <li><a href="#">
+            <img src='etherscan.png'/>
+            </a></li>
         </ul>
       </nav>
 
