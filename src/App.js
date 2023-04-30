@@ -50,7 +50,7 @@ function App() {
         <button
           ref={startButton}
           onClick={handlePlay}
-          >Click To Start
+          >Enter Futurum Terrae
         </button>
         <audio 
           src='/ElevenLabs_2023-04-18T05_35_32.000Z_Josh_bCLiPIexUeHOI6FuOxom.mp3' 
