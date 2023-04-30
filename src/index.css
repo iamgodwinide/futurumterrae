@@ -93,6 +93,7 @@ a{
   background-position: center;
   background-size: 300% 100%;
   background-repeat: no-repeat;
+  background-color: #000;
 }
 
 @media screen and (min-width: 1024px) {
@@ -134,6 +135,11 @@ iframe{
   border: none;
 }
 
+.accordion {
+  max-width: 800px;
+  margin: 2em auto;
+}
+
 @media screen and (max-width: 1024px) {
 
   
@@ -152,8 +158,9 @@ iframe{
     position: relative;
     background-image: url(./img/1.gif);
     background-position: center;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    height: 50vh;
   }
   
 

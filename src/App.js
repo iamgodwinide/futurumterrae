@@ -1,5 +1,7 @@
 import React from 'react'
 import { useRef } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AccordionComponent from './components/Accordion';
 
 function App() {
   const audio = useRef();
@@ -74,6 +76,7 @@ function App() {
       height="660px"
       width="100%"
     />
+    <AccordionComponent/>
     </>
   )
 }
